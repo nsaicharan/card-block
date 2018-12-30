@@ -1,1 +1,25 @@
-.wp-block-cgb-block-cgb{color:#292929;background:#bada55;border:0.2rem solid #292929;padding:2rem}
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.text-center {
+  text-align: center !important; }
+
+.mr-small {
+  margin-right: 10px !important; }
+
+.mb-small {
+  margin-bottom: 10px !important; }
+
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+.g-card__button-wrapper {
+  background: #dedede;
+  padding: 3rem;
+  text-align: center; }

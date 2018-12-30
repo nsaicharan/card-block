@@ -4,3 +4,11 @@
  * CSS for just Backend enqueued after style.scss
  * which makes it higher in priority.
  */
+
+.g-card {
+	&__button-wrapper {
+		background: $gray;
+		padding: 3rem;
+		text-align: center;
+	}
+}

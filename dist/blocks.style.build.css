@@ -1,1 +1,39 @@
-.wp-block-cgb-block-cgb{color:#292929;background:#ff4500;border:0.2rem solid #292929;padding:2rem}
+/**
+ * #.# Common SCSS
+ *
+ * Can include things like variables and mixins
+ * that are used across the project.
+*/
+.text-center {
+  text-align: center !important; }
+
+.mr-small {
+  margin-right: 10px !important; }
+
+.mb-small {
+  margin-bottom: 10px !important; }
+
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+.g-card {
+  max-width: 500px;
+  margin: 1.5rem auto;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.18); }
+  .g-card__img {
+    width: 100%;
+    height: 300px !important;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .g-card__content-wrapper {
+    padding: 0.5rem 1.2rem; }
+  .g-card__title {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    margin: 0 0 1rem; }
+  .g-card p {
+    font-size: 1rem;
+    margin-bottom: 1rem; }
