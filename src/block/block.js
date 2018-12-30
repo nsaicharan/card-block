@@ -53,11 +53,30 @@ registerBlockType("card-block/main", {
 		const getImage = open => {
 			if (attributes.imgURL) {
 				return (
-					<img
-						className="g-card__img"
-						src={attributes.imgURL}
-						alt={attributes.imgAlt}
-					/>
+					<React.Fragment>
+						<img
+							className="g-card__img"
+							src={attributes.imgURL}
+							alt={attributes.imgAlt}
+						/>
+
+						{isSelected ? (
+							<div className="text-center mb-small">
+								<Button
+									className="button button-primary button-small mr-small"
+									onClick={open}
+								>
+									Change Image
+								</Button>
+
+								<Button className="button button-small" onClick={removeImage}>
+									Remove Image
+								</Button>
+							</div>
+						) : (
+							""
+						)}
+					</React.Fragment>
 				);
 			} else {
 				return (
